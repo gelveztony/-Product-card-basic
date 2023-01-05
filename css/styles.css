@@ -1,0 +1,120 @@
+* { padding: 0px; margin: 0px; box-sizing: border-box; }
+
+body { background: hsl(30, 38%, 92%); }
+
+.card {
+    margin: 5% auto;
+    padding: none;
+    background: hsl(0, 0%, 100%);
+    border-radius: 14px;
+    max-width: 640px;
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: nowrap;  
+    overflow: hidden;
+}
+
+.image { width: 50%; line-height: 0%; }
+
+.image img { width: 100%; }
+
+.text { width: 38%; margin: 5%; line-height: 25px;}
+
+.text h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10%;
+    line-height: 90%;
+}
+
+.text .description {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10%;
+}
+
+.text .prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 14%;
+}
+
+.text .price-one {
+    font-family: 'Fraunces', serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 14%;
+    color: #3D8168;
+}
+
+.text .price-two {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    padding-left: 14px;
+}
+
+.text a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5%;
+    background: #3D8168;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.text .fa-shopping-cart { margin-right: 8px; }
+footer { font-size: 14px; text-align: center; margin-bottom: 20px; }
+footer a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 900px) {
+    .card {
+        margin: 30px auto;
+        flex-direction: column;
+        max-width: 364px;
+    }
+
+    .image {
+        width: 364px;
+        max-height: 290px;
+        overflow: hidden;
+    }
+
+    .image img {
+        position: relative;
+        top: -125px;
+    }
+
+    .text {
+        width: 80%;
+        margin: 6%;
+    }
+
+    .text h1 {
+        font-size: 32px;
+        margin-bottom: 5%;
+        margin-block-start: 5%;
+    }
+
+    .text .description {
+        margin-bottom: 5%;
+    }
+
+    .text .prices {
+        margin-top: 10%;
+    }
+
+    .text .price-one {
+        font-size: 32px;
+    }
+}
